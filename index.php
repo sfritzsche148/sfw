@@ -10,7 +10,11 @@
         die('No Server Connection'.$con->connect_error);
     }
 
-    $sql = "INSERT INTO Anfragen (Name, EmailAdresse, Nachricht) VALUES ('Bruce Wayne', 'test1234@gmail.com', 'test Nachricht')";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $nachricht = $_POST['nachricht'];
+
+    $sql = "INSERT INTO Anfragen (Name, EmailAdresse, Nachricht) VALUES (?, ?, ?)";
 
     if ($con->query($sql) === TRUE) {
         echo 'Nachricht wurde gesendet.';
