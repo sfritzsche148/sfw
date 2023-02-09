@@ -1,19 +1,166 @@
+/* Navbar */
 #logo {
     max-width: 300px;
     height: 100px;
     margin-left: 200px;
 }
 
-#navlist {
-    list-style-type: none;
+/* Toogle Button */
+.toggle-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.list-container{
     float: right;
     margin-right: 200px;
-    margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
 #navitem {
     float: left;
     margin-right: 40px;
+    margin-top: 25px;
+    list-style-type: none;
     font-weight: bold;
+    height: 50px;
+}
+
+#navitem:hover {
+    border-bottom: 3px solid #f00946;
+}
+
+/* Herosection  */
+#herosection {
+    height: 780px;
+    padding-top: 30px;
+}
+
+#heroheader {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-left: 500px;
+    margin-top: 350px;
+    font-size: 40px;
+
+}
+
+#herobutton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f00946;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-right: 700px;
+    margin-top: 350px;
+}
+
+
+#herobtnlink {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* agentur div */
+#agentur {
+    width: 100%;
+    height: 920px;
+}
+
+/* leistungen div */
+#leistungen {
+    height: 920px;
+}
+
+/* kontakt form */
+#contactform {
+    text-align: center;
+}
+
+#name {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#email {
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+
+#nachricht {
+    font-size: 30px;
+}
+
+#submitbtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f00946 ;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Footer section */
+#footer {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+/* Response */
+
+@media (max-width:750px) {
+    .list-container {
+        display: none;
+    }
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-container ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list-container li {
+        text-align: center;
+    }
+
+    .list-container.active {
+        display: flex;
+    }
 }

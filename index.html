@@ -15,30 +15,56 @@
         <nav>
             <img
             id="logo"
-            src="./img/SFW Logo WhiteBack.png"
+            src="./img/SFWLogoWhiteBack.png"
             alt=""
             />
-            <ul id="navlist">
-                <li id="navitem">Agentur</li>
-                <li id="navitem">Angebot</li>
-                <li id="navitem">Examples</li>
-            </ul>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="list-container">
+                <ul>
+                    <li id="navitem">Agentur</li>
+                    <li id="navitem">Leistungen</li>
+                    <li id="navitem">Examples</li>
+                    <li id="navitem"><a href="#contactform">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+        <div id="herosection">
+            <h1 id="heroheader">Ihre Internet Auftritt <br /> - unsere Mission</h1>
+            <button id="herobutton"><a id="herobtnlink" href="#agentur">Agentur</a></button>
+        </div>
+
+        <div id="agentur">
+            <div id="aboutus">
+                <h3>Über uns</h3>
+
+            </div>
+        </div>
+
+        <div id="leistungen">
+            <h3>Unsere Leistungen</h3>
+        </div>
+
         <div id="contactform">
+            <h3>Kontakt</h3>
             <form action="index.php" method="post">
-                <input placeholder="name" id="name" name="name"/>
-                <input placeholder="email" id="email" name="email"/>
-                <input placeholder="nachricht" id="nachricht" name="nachricht"/>
+                <input placeholder="Name" id="name" name="name"/>
+                <input placeholder="Email" id="email" name="email"/>
+                <br />
+                <textarea placeholder="Ihre Nachricht" id="nachricht" name="nachricht"></textarea>
+                <br />
+                <input type="submit" name="submit" id="submitbtn">
             </form>
         </div>
     </main>
-    <footer>
-
+    <footer id="footer">
+        <small>SFW © 2023</small>
     </footer>
-
-    <script>
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
